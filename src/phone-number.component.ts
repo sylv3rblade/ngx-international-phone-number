@@ -56,6 +56,7 @@ export class PhoneNumberComponent
     @Input() type = 'text';
     @Input() onlyNumber = true;
     @Input() allowedCountries: Country[];
+    @Input() inputClass = 'form-control';
 
     @Output() onCountryCodeChanged: EventEmitter<any> = new EventEmitter();
 
